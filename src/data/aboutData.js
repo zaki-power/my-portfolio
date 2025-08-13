@@ -26,8 +26,4 @@ export const skills=[
 ]
 
 
-export const languages = [
-    'Arabic',
-    'French',
-    'English'
-]
+
