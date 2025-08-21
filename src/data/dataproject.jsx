@@ -73,16 +73,18 @@ export const projects = [
     github: "https://github.com/zaki-power/youtube-Copy",
     image: youtubeCopy
   },
-  {
-    name: "Bonsai Clone",
-    description: "A simple HTML & CSS clone of a Bonsai-themed website, created as a beginner project to practice web design fundamentals.",
+   {
+    name: "Designer Portfolio",
+    description: "A simple portfolio site for a designer, built with HTML, CSS, and JavaScript.",
     technologies: [
       { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
-      { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
+      { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" },
+      { icon: <i className="devicon-javascript-plain colored" style={{ fontSize: "1rem" }}></i>, name: "JavaScript" }
     ],
-    github: "https://github.com/zaki-power/bonsia-website",
-    image: bonsaiClone
-  },
+    github: "https://github.com/zaki-power/designer-site",
+    image: designerPortfolio
+  }
+  ,
   {
     name: "Music App",
     description: "A sleek and simple music player built with HTML, CSS, and JavaScript to explore audio features and user interface design.",
@@ -95,15 +97,14 @@ export const projects = [
     image: musicApp
   },
   {
-    name: "Designer Portfolio",
-    description: "A simple portfolio site for a designer, built with HTML, CSS, and JavaScript.",
+    name: "Bonsai Clone",
+    description: "A simple HTML & CSS clone of a Bonsai-themed website, created as a beginner project to practice web design fundamentals.",
     technologies: [
       { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
-      { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" },
-      { icon: <i className="devicon-javascript-plain colored" style={{ fontSize: "1rem" }}></i>, name: "JavaScript" }
+      { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
     ],
-    github: "https://github.com/zaki-power/designer-site",
-    image: designerPortfolio
+    github: "https://github.com/zaki-power/bonsia-website",
+    image: bonsaiClone
   }
 ];
 

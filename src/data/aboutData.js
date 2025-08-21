@@ -5,7 +5,7 @@ export const  description = [
 
         "I’m a student at the Higher School of Computer Science and Digital Technologies (ESTIN), exploring both front-end and back-end development. On the front-end, I work with HTML, CSS, Tailwind CSS, and JavaScript. On the back-end, I know a bit of Node.js and Express.js, and I’ve learned how to host websites.",
         "In college, I studied C programming and built a small project with it, which strengthened my problem-solving skills and gave me a solid programming foundation. I enjoy experimenting with different tools and languages to expand my knowledge.",
-        "I’m still at the start of my journey, but I’m passionate about learning step by step, creating useful projects, and improving my skills. My goal is to build clean, functional, and user-friendly applications while staying humble and open to feedback."
+     "I’m still at the start of my journey, but I’m passionate about learning step by step, creating useful projects, and improving my skills. My goal is to build clean, functional, and user-friendly applications ."
 ]
 export const skills=[
     {
