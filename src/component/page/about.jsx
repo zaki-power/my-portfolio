@@ -4,18 +4,23 @@ import ProfileCard from "./profileCard/ProfileCard.jsx";
 import SectionNmae from "./sectionName.jsx"
 import Profilecart from '../../assets/profileCart.jpg' 
 import GradientText from '../textComponent/gradientText/GradientText.jsx'
+import {motion, scale} from "motion/react"
+
 
 const About = React.forwardRef((props, ref) => {
 
      const SikllsItem = ({skill})=> (
-        <div  className="flex flex-row gap-2 border-[0.3px] rounded-2xl border-gray-100 bg-[#B6B09F] pl-5 py-4 px-1 mx-10 md:mx-2 ">
+        <motion.div  
+          whileHover={{scale:1.09}}
+        className="flex flex-row gap-2 border-[0.3px] rounded-2xl border-gray-100 bg-[#B6B09F] pl-5 py-4 px-1 mx-10 md:mx-2 mr-4"
+        >
              <div> <skill.icon className="text-[#141619] font-bold w-7 h-7 md:w-15 md:h-15 border rounded-full p-1 " /> </div>
              <div className="flex flex-col gap-1 ">
                 <div className=" font-bold text-[#EAE4D5] text-sm  md:text-xl lg:text-2xl  ">{skill.skill}</div>
                 <div className="text-gray-100 text-xs md:text-sm lg:text-xl">{skill.discription}</div>
              </div>
 
-        </div>
+        </motion.div>
      )
 
     return (

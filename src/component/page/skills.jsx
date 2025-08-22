@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import skills, { languages } from '../../data/dataSkilse';
 import SectionNmae from "./sectionName";
-
+import {motion} from "motion/react"
 
 const rotateArray = (arr, n) => arr.slice(n).concat(arr.slice(0, n));
 
@@ -68,7 +68,8 @@ const Skills = React.forwardRef((props, ref) => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-white items-center">
             {languages.map((language, idx) => (
-              <div
+              <motion.div
+                 whileHover={{ scale: 1.1 }} 
                 key={idx}
                 style={getSkillStyle(props.skillsBgColor[0])}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = props.skillsBgColor[1]}
@@ -77,7 +78,7 @@ const Skills = React.forwardRef((props, ref) => {
               >
                 <div className="text-[#E5E5CB]  md:text-xl font-bold">{language.name}</div>
                 <div className="text-white text-sm lg:text-xl">{language.level}</div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
