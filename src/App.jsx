@@ -86,7 +86,7 @@ function App() {
       className=" font-inter "
       style={{
         backgroundColor: theme.bgColor,
-        transition: "background-color 1s ease-in-out",
+        transition: "background-color 2s ease-in-out",
       }}
     >
       <Header refArray={navRefs} Colors={theme.headerColor} />

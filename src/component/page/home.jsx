@@ -1,7 +1,7 @@
 import React from "react"
 import BlurText from "../textComponent/BlurText";
-import { Instagram,Github,Twitter,Linkedin ,ArrowRight } from 'lucide-react';
 import ShinyText from '../textComponent/shinyText/ShinyText';
+import { Instagram,Github,Twitter,Linkedin ,ArrowRight } from 'lucide-react';
   
 
 const Home = React.forwardRef((props, ref) => {
@@ -20,7 +20,7 @@ const Home = React.forwardRef((props, ref) => {
          <div 
             id={props.id}
             ref={ref}
-            className="px-10 pb-30 pt-2 h-screen  bg-transparent flex flex-col justify-evenly items-evenly gap-10 lg:flex-row   "
+            className="px-10 pb-30 pt-2 md:h-screen  bg-transparent flex flex-col justify-evenly items-evenly gap-10 lg:flex-row   "
          >  
          
             <div className="flex flex-col justify-center pt-25  gap-5 text-white  ">
@@ -61,10 +61,10 @@ const Home = React.forwardRef((props, ref) => {
                     </button>
                 </div>
                 <div className="flex flex-row gap-4 mt-4 text-[#393e46]">
-                    <a href="https://www.instagram.com/v_zaki_/"> <Instagram className=" rotate-6 "/> </a>
-                    <a href="https://github.com/zaki-power/"><Github/></a>
-                    <a href="https://x.com/zaki_kh26"><Twitter/></a>
-                    <a href="https://www.linkedin.com/in/zaki-kh-08118b333/"><Linkedin/></a>
+                    <a href="https://www.instagram.com/v_zaki_/" target="_blank" rel="noopener noreferrer"> <Instagram className=" rotate-6 "/> </a>
+                    <a href="https://github.com/zaki-power/" target="_blank" rel="noopener noreferrer"><Github/></a>
+                    <a href="https://x.com/zaki_kh26" target="_blank" rel="noopener noreferrer"><Twitter/></a>
+                    <a href="https://www.linkedin.com/in/zaki-kh-08118b333/" target="_blank" rel="noopener noreferrer"><Linkedin/></a>
                 </div>
             </div>
 

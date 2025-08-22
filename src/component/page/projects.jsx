@@ -13,20 +13,20 @@ const Home = React.forwardRef((props, ref) => {
             <> 
                
                 <motion.div
-                    className="  text-white flex flex-col gap-20  "
-                    initial={{ x: propsP.index % 2 === 0 ? -150 : 150, opacity: 0 }}
+                    className="  text-white flex flex-col gap-5  "
+                    initial={{ x: propsP.index % 2 === 0 ? -80 : 80, opacity: 0 }}
                     whileInView={{x:0,opacity:1}}
                     viewport={{ once: false, amount: 0 }}
-                    transition={{duration:0.7,delay:0.1 }}
+                    transition={{duration:0.5,delay:0.1 }}
                   
                  >
                     <div>
                         <div className="text-sm uppercase tracking-wider text-[#DFD0B8]">
                         Featured Project
                         </div>
-                        <div className="text-3xl text-[#948979] font-bold">
+                        <a href={propsP.github} className="text-3xl text-[#948979] font-bold">
                         {propsP.name}
-                        </div>
+                        </a>
                     </div>
 
                     <motion.div 
@@ -81,7 +81,7 @@ const Home = React.forwardRef((props, ref) => {
                 <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#948979]  font-bold ">the projects i worked on </div>
                <img src={projectPhoto2} className=" " />
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-25 ">
                 {
                     projects.map((project, index) => {
                         return (
