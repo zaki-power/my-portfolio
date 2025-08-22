@@ -61,10 +61,10 @@ const Home = React.forwardRef((props, ref) => {
                     </button>
                 </div>
                 <div className="flex flex-row gap-4 mt-4 text-[#393e46]">
-                    <a href=""> <Instagram className=" rotate-6 "/> </a>
-                    <a href=""><Github/></a>
-                    <a href=""><Twitter/></a>
-                    <a href=""><Linkedin/></a>
+                    <a href="https://www.instagram.com/v_zaki_/"> <Instagram className=" rotate-6 "/> </a>
+                    <a href="https://github.com/zaki-power/"><Github/></a>
+                    <a href="https://x.com/zaki_kh26"><Twitter/></a>
+                    <a href="https://www.linkedin.com/in/zaki-kh-08118b333/"><Linkedin/></a>
                 </div>
             </div>
 

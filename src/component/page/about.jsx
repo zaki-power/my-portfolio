@@ -43,7 +43,7 @@ const About = React.forwardRef((props, ref) => {
                 onContactClick={() => console.log('Contact clicked')}
             />
             <div className="grid lg:grid-cols-2 gap-10 pt-40  ">
-                <div className="grid gap-15  ">
+                <div className="grid gap-15   ">
                     {
                         description.map((item,index)=>{
                             return (
@@ -51,7 +51,7 @@ const About = React.forwardRef((props, ref) => {
                                 colors={["#222831", "#393E46", "#948979", "#B6B09F", "black"]}
                                 animationSpeed={15}
                                 showBorder={false}
-                                className="text-xs md:text-lg lg:text-xl  mx-10 md:m-2  "
+                                className="px-10 md:px-0 text-xs md:text-lg lg:text-xl md:m-2  "
                                 key={index}
                                 >
                                 {item}

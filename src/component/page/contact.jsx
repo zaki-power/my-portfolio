@@ -13,8 +13,9 @@ const Contact = React.forwardRef((props, ref) => {
     try {
       await emailjs.sendForm(
         "service_iyp81dx",   
-        "contact_form",      
-        { publicKey: "GbT_Rl6NkKeMPjRE8" } 
+        "contact_form",
+        form.current,      
+        "GbT_Rl6NkKeMPjRE8" 
       );
 
       alert("Message sent successfully ✅");
@@ -133,7 +134,7 @@ const Contact = React.forwardRef((props, ref) => {
             />
          </div>
 
-         <button type="submit" className=" ">Send</button>
+         <button type="submit" className=" bg-black text-white rounded-xl py-2 ">Send</button>
       </form>
       </div>
 

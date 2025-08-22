@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoWhite from "../assets/logoWhite.png"
 
 const items = ["Home", "About", "Skills", "Projects", "Contact"];
 
@@ -15,10 +16,19 @@ export default function TopCenterNav({ refArray ,Colors}) {
   };
 
   return (
-    <>
+    <> 
+      <div 
+       className=" fixed top-2 right-2 md:top-4 md:right-4 z-50 w-10  p-1 rounded-xl shadow-lg  "
+        style={{
+            backgroundColor : Colors[0],
+            color:Colors[1]
+        }}
+      >
+         <img src={logoWhite}alt="" />
+      </div>
       <button
         onClick={() => setOpen(!open)}
-        className="fixed top-2 left-2 md:top-4 md:left-4 z-50 bg-[#1A120B]text-[#E4CFA9] p-3 rounded-xl shadow-lg"
+        className="fixed top-2 left-2 md:top-4 md:left-4 z-50  p-3 rounded-xl shadow-lg"
         style={{
             backgroundColor : Colors[0],
             color:Colors[1]

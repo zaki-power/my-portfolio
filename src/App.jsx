@@ -5,61 +5,58 @@ import Skills from "./component/page/skills";
 import Projects from "./component/page/projects";
 import Contact from "./component/page/contact";
 import { useEffect, useRef, useState } from "react";
-import VantaBackground from './component/bgComponent/bgHome.jsx';
-import BgBody from './component/bgComponent/bgBody.jsx';
-
-
+import VantaBackground from "./component/bgComponent/bgHome.jsx";
+import BgBody from "./component/bgComponent/bgBody.jsx";
+import { motion } from "framer-motion"; // ✅ Import motion
 
 function App() {
-  const navItems = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
   const navRefs = navItems.map(() => useRef(null));
-
 
   const sectionThemes = {
     home: {
       bgColor: "#DFD0B8",
       textColor: "black",
       skillsBgColor: ["#3C2A21", "#1A120B"],
-      headerColor : ["#1A120B","#E4CFA9","black"],
-      projectColor :["#1a120b"],
-      contactColor:[ "#1a120b"]
+      headerColor: ["#1A120B", "#E4CFA9", "black"],
+      projectColor: ["#1a120b"],
+      contactColor: ["#1a120b"],
     },
     about: {
       bgColor: "#F2F2F2",
       textColor: "black",
       skillsBgColor: ["#3C2A21", "#1A120B"],
-      headerColor : ["black","white","#F2F2F2"] ,
-      projectColor :["#1a120b"],
-      contactColor:[ "#1a120b"]
+      headerColor: ["black", "white", "#F2F2F2"],
+      projectColor: ["#1a120b"],
+      contactColor: ["#1a120b"],
     },
     skills: {
       bgColor: "#E5E5CB",
       textColor: "black",
-      skillsBgColor: ["#1A120B","#E4CFA9","#DFD0B8"],
-      headerColor : ["#1a120b","#e4cfa9"] ,
-      projectColor :["#1a120b"],
-      contactColor:[ "#1a120b"]
+      skillsBgColor: ["#1A120B", "#E4CFA9", "#DFD0B8"],
+      headerColor: ["#1a120b", "#e4cfa9"],
+      projectColor: ["#1a120b"],
+      contactColor: ["#1a120b"],
     },
     project: {
       bgColor: "#222831",
       textColor: "#e5e5cb",
       skillsBgColor: ["#393E46", "#393E46"],
-      headerColor : ["#E5E5CB","#222831","#393E46"] ,
-      projectColor :["#393E46"] ,
-      contactColor:[ "#393E46"]
+      headerColor: ["#E5E5CB", "#222831", "#393E46"],
+      projectColor: ["#393E46"],
+      contactColor: ["#393E46"],
     },
     contact: {
-      bgColor:["#F2F2F2"],
-      textColor:["black"],
+      bgColor: ["#F2F2F2"],
+      textColor: ["black"],
       skillsBgColor: [],
-      headerColor : ["black","white","#F2F2F2"] ,
-      projectColor :["#1a120b"],
-      contactColor:[ "#B6B09F"]
-    }
+      headerColor: ["black", "white", "#F2F2F2"],
+      projectColor: ["#1a120b"],
+      contactColor: ["#B6B09F"],
+    },
   };
 
   const [theme, setTheme] = useState(sectionThemes.home);
-
 
   useEffect(() => {
     const options = { threshold: [0.1, 0.9] };
@@ -75,11 +72,6 @@ function App() {
           setTheme(sectionThemes[sectionId]);
         }
       }
-       if(props.imageColor === "#222831"){
-        setPhoto(1);
-        return;
-       }
-       setPhoto(0);
     }, options);
 
     navRefs.forEach((ref) => {
@@ -90,18 +82,23 @@ function App() {
   }, []);
 
   return (
-    <div
+    <motion.div
       className=" font-inter "
       style={{
         backgroundColor: theme.bgColor,
         transition: "background-color 1s ease-in-out",
       }}
     >
-      <Header refArray={navRefs} Colors={theme.headerColor}  />
+      <Header refArray={navRefs} Colors={theme.headerColor} />
 
       <VantaBackground>
-        <Home ref={navRefs[0]} projectsRef={navRefs[3]} ContactRef={navRefs[4]} id="home" />
-      </VantaBackground>     
+        <Home
+          ref={navRefs[0]}
+          projectsRef={navRefs[3]}
+          ContactRef={navRefs[4]}
+          id="home"
+        />
+      </VantaBackground>
 
       <div className="px-5 md:px-25 xl:px-45 2xl:px-55">
         <BgBody>
@@ -117,20 +114,25 @@ function App() {
         </BgBody>
 
         <BgBody>
-          <Projects ref={navRefs[3]} id="project" Colors={theme.projectColor} imageColor={theme.bgColor} />
+          <Projects
+            ref={navRefs[3]}
+            id="project"
+            Colors={theme.projectColor}
+            imageColor={theme.bgColor}
+          />
         </BgBody>
+
         <BgBody>
           <Contact
-          ref={navRefs[4]}
-          id="contact"
-          textColor={theme.textColor}
-          bgColorForm ={theme.contactColor}
+            ref={navRefs[4]}
+            id="contact"
+            textColor={theme.textColor}
+            bgColorForm={theme.contactColor}
           />
         </BgBody>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 export default App;
-;
