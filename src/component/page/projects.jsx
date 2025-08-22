@@ -3,7 +3,7 @@ import {projects} from "../../data/dataproject.jsx";
 import SectionNmae from "./sectionName.jsx" 
 import projectPhoto2 from "../../assets/projectPhoto2.svg"
 import {motion} from "motion/react"
-
+import {Github}from 'lucide-react';
 const Home = React.forwardRef((props, ref) => {
 
     const Project = (propsP)=>{
@@ -22,8 +22,16 @@ const Home = React.forwardRef((props, ref) => {
                         <div className="text-sm uppercase tracking-wider text-[#DFD0B8]">
                         Featured Project
                         </div>
-                        <a href={propsP.github} className="text-3xl text-[#948979] font-bold">
-                        {propsP.name}
+                        <a 
+                        href={propsP.github} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-3xl text-[#948979] font-bold flex items-center gap-5
+                        ">
+                            <div>
+                                 {propsP.name}
+                            </div>
+                            <Github/>
                         </a>
                     </div>
 
@@ -91,6 +99,7 @@ const Home = React.forwardRef((props, ref) => {
                                 image={project.image}
                                 technologies={project.technologies}
                                 index={index}
+                                github={project.github}
                             />
                         )
                     })  
