@@ -27,7 +27,7 @@ const About = React.forwardRef((props, ref) => {
          <div 
             id={props.id}
             ref={ref}
-            className="pb-40 pt-50 text-white flex flex-col items-center justify-around "
+            className="pb-40 pt-50 text-white flex flex-col items-center justify-around  "
          >
 
             <div className="text-center flex flex-col items-center justify-center py-10  ">
@@ -65,7 +65,7 @@ const About = React.forwardRef((props, ref) => {
                         })
                     }
                 </div>
-                <div className="grid gap-15 ">
+                <div className="grid gap-15 mx-5">
 
 
                     {   
