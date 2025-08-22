@@ -1,28 +1,28 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import SectionNmae from "./sectionName.jsx"
-import Spline from "@splinetool/react-spline";
 import { Instagram,Github,Twitter,Linkedin ,ArrowRight,Mail  } from 'lucide-react';
+import Spline from "@splinetool/react-spline";
 
 const Contact = React.forwardRef((props, ref) => {
   const form = useRef(null);
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    try {
-      await emailjs.sendForm(
-        "service_iyp81dx",
-        "contact_form",
-        form.current,
-        "GbT_Rl6NkKeMPjRE8"
-      );
-      alert("Message sent successfully ✅");
-      form.current.reset();
-    } catch (error) {
-      console.error("Failed to send message ❌", error);
-      alert("Something went wrong. Please try again.");
-    }
-  };
+const sendEmail = async (e) => {
+  e.preventDefault();
+  try {
+    await emailjs.sendForm(
+      "service_tc5t3qq", 
+      "zakikh200625300", 
+      form.current,
+      "GbT_Rl6NkKeMPjRE8" 
+    );
+    alert("Message sent successfully ✅");
+    form.current.reset();
+  } catch (error) {
+    console.error("Failed to send message ❌", error);
+    alert("Something went wrong. Please try again.");
+  }
+};
 
   return (
     <div
@@ -138,13 +138,13 @@ const Contact = React.forwardRef((props, ref) => {
         </form>
       </div>
       <div
-       className="  flex w-screen  justify-around items-center  md:h-20 rounded-2xl "
+       className="  flex flex-col md:flex-row w-full  justify-around items-center px-5 py-4 rounded-2xl "
         style={{
           color: props.textColor,
           backgroundColor: props.bgColorForm,
         }}
-      >   <div >
-           <a href="mailto:zakikhanchouche7@gmail.com" className="flex flex-row gap-2 justify-center items-center">
+      >   <div className="" >
+           <a href="mailto:zakikhanchouche7@gmail.com" className= "  flex flex-row gap-2 justify-center items-center">
             <Mail className=" rotate-6" size={30}/> 
             zakikhanchouche7@gmail.com
             </a>

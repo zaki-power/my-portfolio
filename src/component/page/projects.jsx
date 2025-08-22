@@ -1,10 +1,8 @@
 import React, { useState } from "react"
 import {projects} from "../../data/dataproject.jsx";
 import SectionNmae from "./sectionName.jsx" 
-
 import projectPhoto2 from "../../assets/projectPhoto2.svg"
 import {motion} from "motion/react"
-
 
 const Home = React.forwardRef((props, ref) => {
 
@@ -79,8 +77,9 @@ const Home = React.forwardRef((props, ref) => {
             <div className="text-white text-center flex flex-col items-center gap-5  rounded-2xl  px-8 pb-50 pt-50"> 
                 <SectionNmae text="Projects " />
                 <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#948979]  font-bold ">the projects i worked on </div>
-               <img src={projectPhoto2} className=" " />
+                <img src={projectPhoto2} alt="" />
             </div>
+            
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-25 ">
                 {
                     projects.map((project, index) => {

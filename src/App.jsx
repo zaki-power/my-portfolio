@@ -31,7 +31,7 @@ function App() {
       contactColor: ["#1a120b"],
     },
     skills: {
-      bgColor: "#E5E5CB",
+      bgColor: "#E5e5cb",
       textColor: "black",
       skillsBgColor: ["#1A120B", "#E4CFA9", "#DFD0B8"],
       headerColor: ["#1a120b", "#e4cfa9"],
