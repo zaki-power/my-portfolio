@@ -12,7 +12,7 @@ const sendEmail = async (e) => {
   try {
     await emailjs.sendForm(
       "service_tc5t3qq", 
-      "zakikh200625300", 
+      "template_7tyxz1e", 
       form.current,
       "GbT_Rl6NkKeMPjRE8" 
     );

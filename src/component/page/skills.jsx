@@ -74,7 +74,7 @@ const Skills = React.forwardRef((props, ref) => {
                 style={getSkillStyle(props.skillsBgColor[0])}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = props.skillsBgColor[1]}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = props.skillsBgColor[0]}
-                className="flex flex-col px-2 py-4 rounded-lg transition-all duration-300 hover:shadow-lg mx-10 md:mx-2"
+                className="flex flex-col px-2 py-4 rounded-lg transition-all duration-300 hover:shadow-lg mx-10 my-5 md:mx-2"
               >
                 <div className="text-[#E5E5CB]  md:text-xl font-bold">{language.name}</div>
                 <div className="text-white text-sm lg:text-xl">{language.level}</div>
