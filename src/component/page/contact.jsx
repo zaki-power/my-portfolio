@@ -12,7 +12,11 @@ const Contact = React.forwardRef((props, ref) => {
     try {
       await emailjs.sendForm(
         "service_tc5t3qq", 
+<<<<<<< HEAD
         "zakikh200625300", 
+=======
+        "template_7tyxz1e", 
+>>>>>>> a24394a98831b85d77db40477deb6fe049f230d0
         form.current,
         "GbT_Rl6NkKeMPjRE8" 
       );
