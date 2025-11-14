@@ -63,7 +63,7 @@ const sendEmail = async (e) => {
             >
               Contact Form
             </p>
-            <p className="lg:text-xl">
+            <p className="">
               Please contact me directly at&nbsp;
               <a href="mailto:zakikhanchouche7@gmail.com">
                  zakikhanchouche7@gmail.com
