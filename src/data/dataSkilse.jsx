@@ -1,5 +1,6 @@
 // skills.js
 import { SiFramer, SiSwiper } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const skills = [
   {
@@ -46,17 +47,25 @@ const skills = [
 
 export default skills;
 
-export const languages = [
+
+export const useLanguagesData = () => {
+  const { t } = useTranslation();
+
+  const languages = [
     {
-        name: 'Arabic',
-        level: 'Native – Fluent in speaking, reading, and writing'
+      name: t("languages.arabic.name"),
+      level: t("languages.arabic.level")
     },
     {
-        name: 'French',
-        level: 'Intermediate – Good reading and writing, basic speaking'
+      name: t("languages.french.name"),
+      level: t("languages.french.level")
     },
     {
-        name: 'English',
-        level: 'Intermediate – Good reading and writing, basic speaking'
+      name: t("languages.english.name"),
+      level: t("languages.english.level")
     }
-];
+  ];
+
+  return { languages };
+};
+

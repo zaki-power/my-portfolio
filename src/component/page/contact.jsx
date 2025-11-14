@@ -1,28 +1,32 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import SectionNmae from "./sectionName.jsx"
-import { Instagram,Github,Twitter,Linkedin ,ArrowRight,Mail  } from 'lucide-react';
+import { Instagram, Github, Twitter, Linkedin, ArrowRight, Mail } from 'lucide-react';
 import Spline from "@splinetool/react-spline";
+import { useTranslation } from "react-i18next";
 
 const Contact = React.forwardRef((props, ref) => {
   const form = useRef(null);
+  const { t } = useTranslation();
+  
+  const contactEmail = "zakikhanchouche7@gmail.com"; 
 
-const sendEmail = async (e) => {
-  e.preventDefault();
-  try {
-    await emailjs.sendForm(
-      "service_tc5t3qq", 
-      "zakikh200625300", 
-      form.current,
-      "GbT_Rl6NkKeMPjRE8" 
-    );
-    alert("Message sent successfully ✅");
-    form.current.reset();
-  } catch (error) {
-    console.error("Failed to send message ❌", error);
-    alert("Something went wrong. Please try again.");
-  }
-};
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      await emailjs.sendForm(
+        "service_tc5t3qq",
+        "zakikh200625300",
+        form.current,
+        "GbT_Rl6NkKeMPjRE8"
+      );
+      alert(t("contact.form.success_alert"));
+      form.current.reset();
+    } catch (error) {
+      console.error("Failed to send message ❌", error);
+      alert(t("contact.form.error_alert"));
+    }
+  };
 
   return (
     <div
@@ -31,12 +35,12 @@ const sendEmail = async (e) => {
       className=" relative flex flex-col justify-center items-center gap-10"
     >
       <div className="flex flex-col justify-center items-center gap-4">
-        <SectionNmae text="contact" />
+        <SectionNmae text={t("contact.section_name")} />
         <div
           className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold pb-5 xl:pb-20"
           style={{ color: props.textColor[1] }}
         >
-          Let's work together
+          {t("contact.title")}
         </div>
       </div>
 
@@ -61,101 +65,101 @@ const sendEmail = async (e) => {
               className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold"
               style={{ color: props.textColor }}
             >
-              Contact Form
+              {t("contact.form.title")}
             </p>
             <p className="">
-              Please contact me directly at&nbsp;
-              <a href="mailto:zakikhanchouche7@gmail.com">
-                 zakikhanchouche7@gmail.com
+              {t("contact.form.text_pre")}&nbsp;
+              <a href={`mailto:${contactEmail}`}>
+                {contactEmail}
               </a>
-                &nbsp;or drop your info here.
+              &nbsp;{t("contact.form.text_post")}
             </p>
           </div>
 
           <div className="flex flex-col gap-3 md:grid md:grid-cols-2 md:gap-6 text-sm">
             <div className="flex flex-col md:gap-3">
-              <label htmlFor="from_name">Full Name</label>
+              <label htmlFor="from_name">{t("contact.form.fields.name.label")}</label>
               <input
                 style={{ borderColor: props.textColor }}
                 className="border py-2 rounded-xl pl-4"
                 type="text"
                 id="from_name"
                 name="from_name"
-                placeholder="Your Name"
+                placeholder={t("contact.form.fields.name.placeholder")}
                 required
               />
             </div>
 
             <div className="flex flex-col md:gap-3">
-              <label htmlFor="from_email">Email Address</label>
+              <label htmlFor="from_email">{t("contact.form.fields.email.label")}</label>
               <input
                 style={{ borderColor: props.textColor }}
                 className="border py-2 rounded-xl pl-4"
                 type="email"
                 id="from_email"
                 name="from_email"
-                placeholder="zaki@example.com"
+                placeholder={t("contact.form.fields.email.placeholder")}
                 required
               />
             </div>
           </div>
 
           <div className="flex flex-col md:gap-3 text-sm">
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject">{t("contact.form.fields.subject.label")}</label>
             <input
               style={{ borderColor: props.textColor }}
               className="border py-2 rounded-xl pl-4"
               type="text"
               id="subject"
               name="subject"
-              placeholder="How can I help you?"
+              placeholder={t("contact.form.fields.subject.placeholder")}
             />
           </div>
 
           <div className="flex flex-col md:gap-3 text-sm">
-            <label htmlFor="message">Your Message</label>
+            <label htmlFor="message">{t("contact.form.fields.message.label")}</label>
             <textarea
               style={{ borderColor: props.textColor }}
               className="border py-2 rounded-xl pl-4 h-25"
               id="message"
               name="message"
-              placeholder="Your message here"
+              placeholder={t("contact.form.fields.message.placeholder")}
               required
             />
           </div>
 
           <button
             type="submit"
-            className=" rounded-xl py-2"
+            className=" rounded-xl py-2 scale-95 active:scale-100"
             style={{
               
               color: props.bgColorForm,
               backgroundColor: props.textColor,
             }}
           >
-            Send
+            {t("contact.form.submit")}
           </button>
         </form>
       </div>
       <div
-       className="  flex flex-col md:flex-row w-full  justify-around items-center px-5 py-4 rounded-2xl "
+        className=" flex flex-col md:flex-row w-full justify-around items-center px-5 py-4 rounded-2xl "
         style={{
           color: props.textColor,
           backgroundColor: props.bgColorForm,
         }}
-      >   <div className="" >
-           <a href="mailto:zakikhanchouche7@gmail.com" className= "  flex flex-row gap-2 justify-center items-center">
+      >
+        <div className="" >
+          <a href={`mailto:${contactEmail}`} className=" flex flex-row gap-2 justify-center items-center">
             <Mail className=" rotate-6" size={30}/> 
-            zakikhanchouche7@gmail.com
-            </a>
-          </div>
-          <div className="flex flex-row gap-4 mt-4">
-              <a href="https://www.instagram.com/v_zaki_/" target="_blank" rel="noopener noreferrer"> <Instagram className=" rotate-6 "/> </a>
-              <a href="https://github.com/zaki-power/" target="_blank" rel="noopener noreferrer"><Github/></a>
-              <a href="https://x.com/zaki_kh26" target="_blank" rel="noopener noreferrer"><Twitter/></a>
-              <a href="https://www.linkedin.com/in/zaki-kh-08118b333/" target="_blank" rel="noopener noreferrer"><Linkedin/></a>
-          </div>
-    
+            {contactEmail}
+          </a>
+        </div>
+        <div className="flex flex-row gap-4 mt-4">
+          <a href="https://www.instagram.com/v_zaki_/" target="_blank" rel="noopener noreferrer"> <Instagram className=" rotate-6 "/> </a>
+          <a href="https://github.com/zaki-power/" target="_blank" rel="noopener noreferrer"><Github/></a>
+          <a href="https://x.com/zaki_kh26" target="_blank" rel="noopener noreferrer"><Twitter/></a>
+          <a href="https://www.linkedin.com/in/zaki-kh-08118b333/" target="_blank" rel="noopener noreferrer"><Linkedin/></a>
+        </div>
       </div>
     </div>
   );

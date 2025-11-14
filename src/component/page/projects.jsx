@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import {projects} from "../../data/dataproject.jsx";
+import {useProjects} from "../../data/dataproject.jsx";
 import SectionNmae from "./sectionName.jsx" 
 import projectPhoto2 from "../../assets/projectPhoto2.svg"
 import {motion} from "motion/react"
 import {Github}from 'lucide-react';
 const Home = React.forwardRef((props, ref) => {
-
+    const { projects } = useProjects();
     const Project = (propsP)=>{
         return(
             <> 

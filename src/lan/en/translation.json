@@ -1,0 +1,121 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "aboutSection": {
+    "sectionTitle": "About Me",
+    "mainHeader": "How I Am",
+    "profileCard": {
+      "name": "ZAKI .K",
+      "title": "Software Engineer",
+      "status": "Online",
+      "contactText": "Contact Me"
+    }
+  },
+  "description": {
+    "p1": "I'm a student at the Higher School of Computer Science and Digital Technologies (ESTIN), exploring both front-end and back-end development. On the front-end, I work with HTML, CSS, Tailwind CSS, and JavaScript. On the back-end, I know a bit of Node.js and Express.js, and I've learned how to host websites.",
+    "p2": "In college, I studied C programming and built a small project with it, which strengthened my problem-solving skills and gave me a solid programming foundation. I enjoy experimenting with different tools and languages to expand my knowledge.",
+    "p3": "I'm still at the start of my journey, but I'm passionate about learning step by step, creating useful projects, and improving my skills. My goal is to build clean, functional, and user-friendly applications."
+  },
+  "skills": {
+    "adaptable_title": "Adaptable",
+    "adaptable_desc": "I thrive in changing environments, quickly learning new tools and adjusting to evolving requirements.",
+    "technical_title": "Technical Proficiency",
+    "technical_desc": "I have hands-on experience with modern web technologies, frameworks, and best practices to deliver high-quality solutions.",
+    "problem_title": "Problem Solver",
+    "problem_desc": "I enjoy tackling complex challenges and finding elegant solutions through creative thinking."
+  },
+  "languages": {
+    "arabic": {
+      "name": "Arabe",
+      "level": "Langue maternelle – Courant à l’oral, à la lecture et à l’écriture"
+    },
+    "french": {
+      "name": "Français",
+      "level": "Intermédiaire – Bonne lecture et écriture, expression orale basique"
+    },
+    "english": {
+      "name": "Anglais",
+      "level": "Intermédiaire – Bonne lecture et écriture, expression orale basique"
+    }
+  },
+  "projects": {
+    "reussir_tcf": {
+      "name": "Reussir le TCF",
+      "description": "Access three essential TCF resources in one practical e-book. Study anytime on your computer, tablet, or phone and improve your French skills wherever you are"
+    },
+    "squarespace_copy": {
+      "name": "Squarespace Copy",
+      "description": "A recreation of the Squarespace layout and sections using React, Tailwind CSS, and Framer Motion."
+    },
+    "movie_app": {
+      "name": "Movie App",
+      "description": "A movie search and information app built to practice working with fetch and APIs, and to improve my skills in handling external data."
+    },
+    "shoes_shop": {
+      "name": "Shoes Shop",
+      "description": "My first React app, built to learn the Framer Motion library and experiment with animating components."
+    },
+    "designer_portfolio": {
+      "name": "Designer Portfolio",
+      "description": "A simple portfolio site for a designer, built with HTML, CSS, and JavaScript."
+    },
+    "my_portfolio": {
+      "name": "My Portfolio",
+      "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React, Tailwind CSS, JavaScript, and Express.js, it also demonstrates some of my back-end knowledge. This is my first fully completed project."
+    },
+    "music_app": {
+      "name": "Music App",
+      "description": "A sleek and simple music player built with HTML, CSS, and JavaScript to explore audio features and user interface design."
+    }
+  },
+  "home": {
+    "title": "Software Developer",
+    "intro": "Hi, I'm",
+    "name": "Zaki Khanchouche",
+    "description": "I’m an aspiring software developer, currently exploring the vast world of coding. With a growing foundation in web development.",
+    "viewWork": "View my work",
+    "contactMe": "Contact me"
+  },
+  "contact": {
+    "section_name": "CONTACT",
+    "title": "Let's work together",
+    "email_link": "zakikhanchouche7@gmail.com",
+    "form": {
+      "title": "Contact Form",
+      "text_pre": "Please contact me directly at",
+      "text_post": "or drop your info here.",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Your Name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "zaki@example.com"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "How can I help you?"
+        },
+        "message": {
+          "label": "Your Message",
+          "placeholder": "Your message here"
+        }
+      },
+      "submit": "Send",
+      "success_alert": "Message sent successfully ✅",
+      "error_alert": "Something went wrong. Please try again."
+    }
+  },
+  "skillsSection": {
+    "title": "Skills",
+    "technologiesHeader": "Technologies I use",
+    "technologiesDescription": "I have worked with a variety of technologies. Here are some of the technologies I have experience with",
+    "languagesHeader": "Languages"
+  }
+}

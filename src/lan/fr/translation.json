@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "aboutSection": {
+    "sectionTitle": "À Propos de Moi",
+    "mainHeader": "Qui Je Suis",
+    "profileCard": {
+      "name": "ZAKI .K",
+      "title": "Ingénieur Logiciel",
+      "status": "En Ligne",
+      "contactText": "Contactez-moi"
+    }
+  },
+  "description": {
+    "p1": "Je suis étudiant à l’École Supérieure en Informatique et Technologies Numériques (ESTIN), et j’explore à la fois le développement front-end et back-end. En front-end, je travaille avec HTML, CSS, Tailwind CSS et JavaScript. En back-end, je connais un peu Node.js et Express.js, et j’ai appris à héberger des sites web.",
+    "p2": "À l’université, j’ai étudié la programmation en C et réalisé un petit projet avec ce langage, ce qui a renforcé mes compétences en résolution de problèmes et m’a donné de solides bases en programmation. J’aime expérimenter différents outils et langages pour élargir mes connaissances.",
+    "p3": "Je suis encore au début de mon parcours, mais je suis passionné par l’apprentissage progressif, la création de projets utiles et l’amélioration continue de mes compétences. Mon objectif est de développer des applications propres, fonctionnelles et faciles à utiliser."
+  },
+
+  "skills": {
+    "adaptable_title": "Adaptable",
+    "adaptable_desc": "Je m'épanouis dans des environnements changeants, apprenant rapidement de nouveaux outils et m’adaptant à l’évolution des besoins.",
+
+    "technical_title": "Compétence technique",
+    "technical_desc": "J’ai de l’expérience pratique avec les technologies web modernes, les frameworks et les bonnes pratiques pour fournir des solutions de haute qualité.",
+
+    "problem_title": "Résolution de problèmes",
+    "problem_desc": "J’aime relever des défis complexes et trouver des solutions élégantes grâce à une réflexion créative."
+  },
+  
+  "languages": {
+    "arabic": {
+      "name": "Arabe",
+      "level": "Langue maternelle – Courant à l’oral, à la lecture et à l’écriture"
+    },
+    "french": {
+      "name": "Français",
+      "level": "Intermédiaire – Bonne lecture et écriture, expression orale basique"
+    },
+    "english": {
+      "name": "Anglais",
+      "level": "Intermédiaire – Bonne lecture et écriture, expression orale basique"
+    }
+  }
+    ,
+  "projects": {
+    "reussir_tcf": {
+      "name": "Réussir le TCF",
+      "description": "Accédez à trois ressources essentielles pour le TCF dans un e-book pratique. Étudiez à tout moment sur votre ordinateur, tablette ou téléphone et améliorez vos compétences en français où que vous soyez."
+    },
+    "squarespace_copy": {
+      "name": "Copie de Squarespace",
+      "description": "Une recréation de la mise en page et des sections de Squarespace en utilisant React, Tailwind CSS et Framer Motion."
+    },
+    "movie_app": {
+      "name": "Application de films",
+      "description": "Une application de recherche et d'information sur les films, construite pour pratiquer l'utilisation de fetch et des API, et améliorer mes compétences dans la gestion des données externes."
+    },
+    "shoes_shop": {
+      "name": "Boutique de chaussures",
+      "description": "Ma première application React, créée pour apprendre la bibliothèque Framer Motion et expérimenter l'animation des composants."
+    },
+    "designer_portfolio": {
+      "name": "Portfolio de designer",
+      "description": "Un site portfolio simple pour un designer, construit avec HTML, CSS et JavaScript."
+    },
+    "my_portfolio": {
+      "name": "Mon Portfolio",
+      "description": "Un site portfolio personnel présentant mes projets, compétences et expériences. Construit avec React, Tailwind CSS, JavaScript et Express.js, il démontre également certaines de mes connaissances back-end. Il s'agit de mon premier projet entièrement terminé."
+    },
+    "music_app": {
+      "name": "Application musicale",
+      "description": "Un lecteur de musique simple et élégant construit avec HTML, CSS et JavaScript pour explorer les fonctionnalités audio et le design de l'interface utilisateur."
+    }
+  }
+  ,
+  "home": {
+    "title": "Développeur Logiciel",
+    "intro": "Salut, je suis",
+    "name": "Zaki Khanchouche",
+    "description": "Je suis un développeur logiciel en herbe, explorant actuellement le vaste monde du code. Avec une base croissante en développement web.",
+    "viewWork": "Voir mes projets",
+    "contactMe": "Me contacter"
+  },
+   
+  "contact": {
+    "section_name": "CONTACT",
+    "title": "Travaillons ensemble",
+    "email_link": "zakikhanchouche7@gmail.com",
+    "form": {
+      "title": "Formulaire de Contact",
+      "text_pre": "N'hésitez pas à me contacter directement à",
+      "text_post": "ou laissez vos informations ici.",
+      "fields": {
+        "name": {
+          "label": "Nom Complet",
+          "placeholder": "Votre Nom"
+        },
+        "email": {
+          "label": "Adresse E-mail",
+          "placeholder": "zaki@example.com"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Comment puis-je vous aider ?"
+        },
+        "message": {
+          "label": "Votre Message",
+          "placeholder": "Votre message ici"
+        }
+      },
+      "submit": "Envoyer",
+      "success_alert": "Message envoyé avec succès ✅",
+      "error_alert": "Quelque chose n'a pas fonctionné. Veuillez réessayer."
+    }
+  }
+  ,
+
+  "skillsSection": {
+    "title": "Compétences",
+    "technologiesHeader": "Technologies que j'utilise",
+    "technologiesDescription": "J'ai travaillé avec une variété de technologies. Voici quelques-unes des technologies avec lesquelles j'ai de l'expérience",
+    "languagesHeader": "Langues"
+  }
+
+
+}
