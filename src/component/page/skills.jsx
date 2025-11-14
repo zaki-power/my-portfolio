@@ -17,7 +17,7 @@ const Skills = React.forwardRef((props, ref) => {
     <div
       id={props.id}
       ref={ref}
-      className="flex flex-col justify-center items-center gap-30"
+      className="flex flex-col justify-center items-center gap-20"
     >   
 
       <div
@@ -28,7 +28,7 @@ const Skills = React.forwardRef((props, ref) => {
         <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold">
           Technologies I use
         </div>
-        <div className="text-center text-sm md:text-xl lg:text-2xl xl:text-3xl w-85">
+        <div className="text-center text-sm md:text-base  lg:text-xl w-85">
           I have worked with a variety of technologies. Here are some of the technologies I have experience with
         </div>
       </div>
@@ -64,12 +64,12 @@ const Skills = React.forwardRef((props, ref) => {
       <div>
         <div className="text-2xl flex flex-col justify-center items-center gap-20">
           <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center" style={{ color: props.textColor }}>
-            Languages & <br /> Communication Skills
+            Languages 
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-white items-center">
             {languages.map((language, idx) => (
               <motion.div
-                 whileHover={{ scale: 1.1 }} 
+                 whileHover={{ scale: 1.03 }} 
                 key={idx}
                 style={getSkillStyle(props.skillsBgColor[0])}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = props.skillsBgColor[1]}
@@ -77,7 +77,7 @@ const Skills = React.forwardRef((props, ref) => {
                 className="flex flex-col px-2 py-4 rounded-lg transition-all duration-300 hover:shadow-lg mx-10 my-5 md:mx-2"
               >
                 <div className="text-[#E5E5CB]  md:text-xl font-bold">{language.name}</div>
-                <div className="text-white text-sm lg:text-xl">{language.level}</div>
+                <div className="text-white text-sm md:text-base">{language.level}</div>
               </motion.div>
             ))}
           </div>

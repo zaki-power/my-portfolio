@@ -35,7 +35,7 @@ export const projects = [
       { icon: <i className="devicon-tailwindcss-original colored" style={{ fontSize: "1rem" }}></i>, name: "Tailwind CSS" },
       { icon: <i className="devicon-express-original colored" style={{ fontSize: "1rem" }}></i>, name: "Express.js" }
     ],
-    github: "https://github.com/zaki-power/squarespace.cope",
+    github: "https://github.com/zaki-power/my-portfolio",
     image: myProtfolio
   },
   {
@@ -63,16 +63,16 @@ export const projects = [
     github: "https://github.com/zaki-power/shoes-shop",
     image: shoesShop
   },
-  {
-    name: "YouTube Copy",
-    description: "My first project, created to learn HTML and CSS by following a YouTube course.",
-    technologies: [
-      { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
-      { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
-    ],
-    github: "https://github.com/zaki-power/youtube-Copy",
-    image: youtubeCopy
-  },
+  // {
+  //   name: "YouTube Copy",
+  //   description: "My first project, created to learn HTML and CSS by following a YouTube course.",
+  //   technologies: [
+  //     { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
+  //     { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
+  //   ],
+  //   github: "https://github.com/zaki-power/youtube-Copy",
+  //   image: youtubeCopy
+  // },
    {
     name: "Designer Portfolio",
     description: "A simple portfolio site for a designer, built with HTML, CSS, and JavaScript.",
@@ -96,16 +96,16 @@ export const projects = [
     github: "https://github.com/zaki-power/music-app",
     image: musicApp
   },
-  {
-    name: "Bonsai Clone",
-    description: "A simple HTML & CSS clone of a Bonsai-themed website, created as a beginner project to practice web design fundamentals.",
-    technologies: [
-      { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
-      { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
-    ],
-    github: "https://github.com/zaki-power/bonsia-website",
-    image: bonsaiClone
-  }
+  // {
+  //   name: "Bonsai Clone",
+  //   description: "A simple HTML & CSS clone of a Bonsai-themed website, created as a beginner project to practice web design fundamentals.",
+  //   technologies: [
+  //     { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
+  //     { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
+  //   ],
+  //   github: "https://github.com/zaki-power/bonsia-website",
+  //   image: bonsaiClone
+  // }
 ];
 
 

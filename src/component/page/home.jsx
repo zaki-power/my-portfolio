@@ -43,18 +43,18 @@ const Home = React.forwardRef((props, ref) => {
                  className=" text-sm md:text-xl lg:text-2xl text-[#948979] w-3/4"
                  
                  >
-                    I’m an aspiring software developer, currently exploring the vast world of coding. With a growing foundation in web development — especially front-end and a bit of back-end — I’m passionate about learning modern technologies and writing clean, purposeful code. Even at this early stage, I enjoy turning small, challenging problems into simple, elegant solutions.
+                    I’m an aspiring software developer, currently exploring the vast world of coding. With a growing foundation in web development 
                 </div>
                 <div className="flex flex-row gap-4 mt-4  text-[#948979]">
                     <button
-                     className="'bg-gray-800 px-4 py-2 rounded-xl  flex flex-row bg-[#393e46] hover:bg-gray-[393E46] '"
+                     className=" text-sm cursor-pointer md:text-xl px-4 py-2 rounded-xl  flex flex-row bg-[#393e46] hover:bg-gray-[393E46] '"
                         onClick={() => refhandleScrollToSection(props.projectsRef)}   
                         >
                         <div className="">view my work </div>
                         <ArrowRight className="inline-block ml-2 pt-2"/>
                     </button>
                     <button
-                     className=" border-2 border-[white] rounded-xl px-2 hover:border-[#393e46] hover:bg-[#393e46] "
+                     className="text-sm cursor-pointer md:text-xl border-2 border-[white] rounded-xl px-2 hover:border-[#393e46] hover:bg-[#393e46] "
                         onClick={() => refhandleScrollToSection(props.ContactRef)}
                      >
                         Contect me

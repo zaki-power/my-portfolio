@@ -40,9 +40,9 @@ const sendEmail = async (e) => {
         </div>
       </div>
 
-      <div className="grid xl:grid-cols-2">
+      <div className="grid xl:grid-cols-2 place-items-center ">
         <Spline
-          className="pl-8"
+          className="pl-8 md:pl-12 "
           scene="https://prod.spline.design/Q9UP2MleY1bddKU0/scene.splinecode"
         />
 
@@ -64,11 +64,11 @@ const sendEmail = async (e) => {
               Contact Form
             </p>
             <p className="lg:text-xl">
-              Please contact me directly at
+              Please contact me directly at&nbsp;
               <a href="mailto:zakikhanchouche7@gmail.com">
-                zakikhanchouche7@gmail.com
+                 zakikhanchouche7@gmail.com
               </a>
-              or drop your info here.
+                &nbsp;or drop your info here.
             </p>
           </div>
 
