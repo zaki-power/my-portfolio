@@ -14,7 +14,7 @@ import designerPortfolio from "../assets/designerPortfolio.png";
 export const projects = [
   {
     name: "Reussir le tcf",
-    description: "Préparez le TCF (Test de connaissance du français) avec notre livre numérique exclusif qui réunit 3 ouvrages de référence en un seul volume pratique. Accessible à tout moment sur ordinateur, tablette ou téléphone, il vous permet de lire, réviser et progresser efficacement, où que vous soyez",
+    description: "Access three essential TCF resources in one practical e-book. Study anytime on your computer, tablet, or phone and improve your French skills wherever you are",
     technologies: [
       { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
       { icon: <i className="devicon-javascript-plain colored" style={{ fontSize: "1rem" }}></i>, name: "JavaScript" },
