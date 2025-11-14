@@ -32,12 +32,6 @@ export default function TopCenterNav({ refArray, Colors }) {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
-  const buttonVariants = {
-    initial: { scale: 1 },
-    hover: { scale: 1.1 },
-    active: { scale: 1.2, backgroundColor: "#333", color: "#fff" },
-  };
-
 
   const handleScrollToSection = (index) => {
     const section = refArray[index]?.current;
@@ -60,7 +54,7 @@ export default function TopCenterNav({ refArray, Colors }) {
 
       <button
         onClick={() => setOpen(!open)}
-        className="fixed top-2 left-2 md:top-4 md:left-4 z-50 p-3 "
+        className="fixed top-2 left-2 md:top-4 md:left-4 z-50 p-3 rounded-2xl "
         style={{
           backgroundColor: Colors[0],
           color: Colors[1]
@@ -68,36 +62,37 @@ export default function TopCenterNav({ refArray, Colors }) {
       >
         {open ? <X size={20} /> : <Menu size={20} />}
       </button>
-<AnimatePresence>
-      {
-        !open && isVisible && (
-          <div className="fixed   left-1/2 -translate-x-1/2  z-50  px-8 py-3 rounded-2xl ">
-            <button
-              className="p-4 mr-2 py-2 rounded-xl shadow-lg"
+      <AnimatePresence>
+        {
+          !open && isVisible && (
+<motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.5 }}
+          className="fixed left-1/2  top-2  md:top-4  -translate-x-1/2 flex gap-2 z-50"
+        >
+          {["fr", "en"].map((lng) => (
+            <motion.button
+              key={lng}
+              onClick={() => changeLanguage(lng)}
+              className="p-3 rounded-xl shadow-lg"
               style={{
-                backgroundColor: Colors[0],
-                color: Colors[1]
+          backgroundColor: Colors[0],
+          color: Colors[1]
               }}
-              onClick={() => changeLanguage("fr")}
+              initial="initial"
+              whileHover="hover"
+              transition={{ type: "spring", stiffness: 300 }}
             >
-              FR
-            </button>
+              {lng.toUpperCase()}
+            </motion.button>
+          ))}
+        </motion.div>
 
-            <button
-              className="p-3 ml-2 py-2 rounded-xl shadow-lg"
-              style={{
-                backgroundColor: Colors[0],
-                color: Colors[1]
-              }}
-              onClick={() => changeLanguage("en")}
-            >
-              EN
-            </button>
-          </div>
-
-        )
-      }
-</AnimatePresence>
+          )
+        }
+      </AnimatePresence>
 
       <AnimatePresence>
         {open && (

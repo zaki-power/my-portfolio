@@ -20,8 +20,8 @@ const About = React.forwardRef((props, ref) => {
         >
             <div> <skill.icon className="text-[#141619] font-bold w-7 h-7 md:w-15 md:h-15 border rounded-full p-1 " /> </div>
             <div className="flex flex-col gap-1 ">
-                <div className=" font-bold text-[#EAE4D5] text-sm  md:text-xl lg:text-2xl  ">{skill.skill}</div>
-                <div className="text-gray-100 text-xs md:text-sm lg:text-xl">{skill.discription}</div>
+                <div className=" font-bold text-[#EAE4D5] text-sm  md:text-xl  ">{skill.skill}</div>
+                <div className="text-gray-100 text-xs md:text-sm ">{skill.discription}</div>
             </div>
 
         </motion.div>
