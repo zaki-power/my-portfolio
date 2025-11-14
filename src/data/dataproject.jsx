@@ -102,16 +102,16 @@ export const useProjects = () => {
       github: "https://github.com/zaki-power/music-app",
       image: musicApp
     },
-    {
-  name: t("projects.youtube_copy.name"),
-  description: t("projects.youtube_copy.description"),
-  technologies: [
-    { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
-    { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
-  ],
-  github: "https://github.com/zaki-power/youtube-Copy",
-  image: youtubeCopy
-}
+//     {
+//   name: t("projects.youtube_copy.name"),
+//   description: t("projects.youtube_copy.description"),
+//   technologies: [
+//     { icon: <i className="devicon-html5-plain colored" style={{ fontSize: "1rem" }}></i>, name: "HTML" },
+//     { icon: <i className="devicon-css3-plain colored" style={{ fontSize: "1rem" }}></i>, name: "CSS" }
+//   ],
+//   github: "https://github.com/zaki-power/youtube-Copy",
+//   image: youtubeCopy
+// }
 
   ];
 
