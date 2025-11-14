@@ -130,7 +130,7 @@ export default function TopCenterNav({ refArray, Colors }) {
         )}
       </AnimatePresence>
 
-
+<div></div>
 
       <AnimatePresence>
         {open && (
